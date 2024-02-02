@@ -11,7 +11,7 @@ async function getAllStudents(db) {
 }
 
 export async function GET(request) {
-  console.log(request)
+  console.log(request);
   try {
     const db = await getMongoConnection();
     const students = await getAllStudents(db);
